@@ -609,17 +609,94 @@ h1, h2, h3, h4, h5 { line-height: 1.15; font-weight: 700; }
   overflow: hidden;
 }
 
-.hero-video-wrap iframe {
+/* ── HERO ANIMATED BACKGROUND ──────────────────────────────────── */
+.hero-anim-scene {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 177.78vh;
-  min-width: 100%;
-  height: 56.25vw;
-  min-height: 100%;
+  inset: 0;
+  background: #060606;
+  overflow: hidden;
+}
+
+.hab {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  will-change: transform, opacity;
   pointer-events: none;
-  opacity: 0.2;
+}
+
+.hab-1 {
+  width: min(800px, 70vw);
+  height: min(800px, 70vw);
+  background: radial-gradient(circle, rgba(230,57,70,0.55) 0%, transparent 70%);
+  top: -20%;
+  left: -15%;
+  animation: habFloat1 14s ease-in-out infinite;
+}
+
+.hab-2 {
+  width: min(700px, 60vw);
+  height: min(700px, 60vw);
+  background: radial-gradient(circle, rgba(244,162,97,0.4) 0%, transparent 70%);
+  bottom: -20%;
+  right: -10%;
+  animation: habFloat2 18s ease-in-out infinite;
+}
+
+.hab-3 {
+  width: min(500px, 40vw);
+  height: min(500px, 40vw);
+  background: radial-gradient(circle, rgba(230,57,70,0.3) 0%, transparent 70%);
+  top: 40%;
+  left: 55%;
+  animation: habFloat3 10s ease-in-out infinite;
+}
+
+.hab-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: habGridMove 22s linear infinite;
+}
+
+.hab-scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.07) 3px,
+    rgba(0,0,0,0.07) 4px
+  );
+  pointer-events: none;
+}
+
+@keyframes habFloat1 {
+  0%,100% { transform: translate(0,0) scale(1);    opacity: 0.8; }
+  25%      { transform: translate(8vw,6vh) scale(1.15); opacity: 1;   }
+  50%      { transform: translate(4vw,12vh) scale(0.9); opacity: 0.6; }
+  75%      { transform: translate(-4vw,6vh) scale(1.05); opacity: 0.9; }
+}
+
+@keyframes habFloat2 {
+  0%,100% { transform: translate(0,0) scale(1);      opacity: 0.7; }
+  30%      { transform: translate(-10vw,-8vh) scale(1.2);  opacity: 1;   }
+  60%      { transform: translate(-5vw,-4vh) scale(0.85);  opacity: 0.5; }
+  80%      { transform: translate(-8vw,-6vh) scale(1.1);   opacity: 0.8; }
+}
+
+@keyframes habFloat3 {
+  0%,100% { transform: translate(0,0) scale(1);   opacity: 0.5; }
+  50%      { transform: translate(-5vw,-8vh) scale(1.4); opacity: 0.9; }
+}
+
+@keyframes habGridMove {
+  from { background-position: 0 0, 0 0; }
+  to   { background-position: 60px 60px, 60px 60px; }
 }
 
 .video-overlay {
@@ -2534,6 +2611,191 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
 }
 
+/* ── INSTAGRAM FEED ───────────────────────────────────────────── */
+.insta-section { background: var(--bg); }
+
+.insta-profile-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 28px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(12px);
+  flex-wrap: wrap;
+}
+
+.insta-profile-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.insta-avatar-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.insta-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.insta-avatar-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  z-index: 0;
+  animation: instaRingSpin 4s linear infinite;
+}
+
+@keyframes instaRingSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.insta-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.insta-handle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+
+.insta-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.insta-meta strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.insta-follow-btn {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Behold widget wrapper */
+.insta-feed-wrap {
+  margin-bottom: 36px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+behold-widget {
+  display: block;
+  width: 100%;
+}
+
+/* Connect notice — shown until Behold widget ID is configured */
+.insta-connect-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: var(--glass);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+}
+
+.insta-connect-inner {
+  max-width: 520px;
+  text-align: center;
+}
+
+.insta-connect-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto 20px;
+}
+
+.insta-connect-inner h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.insta-connect-inner > p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.insta-steps {
+  text-align: left;
+  list-style: decimal;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.insta-steps strong { color: var(--text); }
+
+.insta-steps code {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.82rem;
+  color: var(--red, #e63946);
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.insta-cta {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .insta-profile-bar { padding: 16px 18px; }
+  .insta-meta { gap: 12px; font-size: 0.78rem; }
+}
+
+@media (max-width: 480px) {
+  .insta-profile-left { gap: 12px; }
+  .insta-handle { font-size: 0.88rem; }
+  .insta-connect-notice { padding: 40px 16px; }
+}
+
 /* ── 24. CONTACT SECTION ──────────────────────────────────────── */
 .contact-section { background: var(--bg-3); }
 
@@ -3566,7 +3828,6 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 .gallery-grid,
 .blog-grid,
 .calories-wrap,
-.app-wrap,
 .contact-wrap,
 .footer-grid,
 .stat-counters,
@@ -3574,6 +3835,7 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
   visibility: visible;
   min-height: 1px; /* prevents collapsed layout if children are position:absolute */
 }
+
 
 /* Override AOS pointer-events lock on containers that must be scrollable */
 [data-aos].section-header,

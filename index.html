@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IRONFORGE | Transform Your Body. Unlock Your Power.</title>
-  <meta name="description" content="IRONFORGE Fitness Club – World-class gym with elite training, expert coaches & premium facilities. Join now and begin your transformation." />
-  <meta name="keywords" content="gym, fitness club, personal training, weight loss, bodybuilding, crossfit, powerlifting, yoga, MMA" />
-  <meta name="author" content="IRONFORGE Fitness Club" />
-  <meta property="og:title" content="IRONFORGE Fitness Club" />
+  <title>ULTIMATE FITNESS CLUB | Transform Your Body. Unlock Your Power.</title>
+  <meta name="description" content="Ultimate Fitness Club – World-class gym in Jaipur with certified trainers, modern equipment & premium facilities. Join now and begin your transformation." />
+  <meta name="keywords" content="gym, fitness club, personal training, weight loss, yoga, zumba, aerobics, HIIT, cardio, Jaipur" />
+  <meta name="author" content="Ultimate Fitness Club" />
+  <meta property="og:title" content="Ultimate Fitness Club" />
   <meta property="og:description" content="Transform Your Body. Unlock Your Power." />
   <meta property="og:type" content="website" />
 
@@ -29,6 +29,9 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Behold Instagram Feed Widget -->
+  <script src="https://w.behold.so/widget.js" type="module" defer></script>
 </head>
 <body>
 
@@ -49,7 +52,7 @@
         </div>
         <span class="loader-pct" id="loaderPct">0%</span>
       </div>
-      <p class="loader-tagline">Forging Champions Since 2011</p>
+      <p class="loader-tagline">Forging Champions Since 2015</p>
     </div>
   </div>
 
@@ -65,7 +68,7 @@
     <div class="nav-container">
       <!-- Logo -->
       <a href="#home" class="nav-logo">
-        <img src="assets/ultimate_logo.jpg" alt="IRONFORGE Logo" class="nav-logo-img" style="height: 60px;"/>
+        <img src="assets/ultimate_logo.jpg" alt="Ultimate Fitness Club Logo" class="nav-logo-img" style="height: 60px;"/>
       </a>
 
       <!-- Desktop Nav Links -->
@@ -78,6 +81,7 @@
         <li><a href="#bmi" class="nav-link">BMI</a></li>
         <li><a href="#stories" class="nav-link">Results</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#instagram" class="nav-link">Instagram</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
@@ -108,6 +112,7 @@
         <li><a href="#bmi" class="mobile-link">BMI Calculator</a></li>
         <li><a href="#stories" class="mobile-link">Success Stories</a></li>
         <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#instagram" class="mobile-link">Instagram</a></li>
         <li><a href="#book-trial" class="mobile-link">Book Free Trial</a></li>
         <li><a href="#enquiry" class="mobile-link">Enquiry</a></li>
         <li><a href="#contact" class="mobile-link">Contact</a></li>
@@ -123,16 +128,15 @@
     <!-- Canvas for particles & light rays -->
     <canvas class="hero-canvas" id="heroCanvas"></canvas>
 
-    <!-- Video Background Layer -->
+    <!-- Animated Background Scene -->
     <div class="hero-video-wrap">
-      <iframe
-        id="heroVideo"
-        src="https://www.youtube.com/embed/videoseries?list=PLjVSBECiXPJNDiCMHXxSMpetVu8MV1JGj&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-        title="Gym Background Video">
-      </iframe>
+      <div class="hero-anim-scene">
+        <div class="hab hab-1"></div>
+        <div class="hab hab-2"></div>
+        <div class="hab hab-3"></div>
+        <div class="hab-grid"></div>
+        <div class="hab-scanline"></div>
+      </div>
       <div class="video-overlay"></div>
     </div>
 
@@ -163,7 +167,7 @@
     <div class="hero-content">
       <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
         <i class="fas fa-fire"></i>
-        <span>Premium Fitness Since 2018</span>
+        <span>Premium Fitness Since 2015</span>
       </div>
 
       <h1 class="hero-headline">
@@ -174,8 +178,8 @@
       </h1>
 
       <p class="hero-sub" id="heroSub">
-        Elite coaching · Cutting-edge equipment · Proven results.<br />
-        Join 12,000+ members who chose to be extraordinary.
+        Certified trainers · World-class equipment · Proven results.<br />
+        Join 1,500+ members who chose to be extraordinary.
       </p>
 
       <div class="hero-cta" id="heroCta">
@@ -192,12 +196,12 @@
       <!-- Hero Stats -->
       <div class="hero-stats" id="heroStats">
         <div class="hero-stat">
-          <span class="hero-stat-num">12K+</span>
+          <span class="hero-stat-num">1.5K+</span>
           <span class="hero-stat-label">Members</span>
         </div>
         <div class="hero-stat-divider"></div>
         <div class="hero-stat">
-          <span class="hero-stat-num">50+</span>
+          <span class="hero-stat-num">10+</span>
           <span class="hero-stat-label">Expert Trainers</span>
         </div>
         <div class="hero-stat-divider"></div>
@@ -207,8 +211,8 @@
         </div>
         <div class="hero-stat-divider"></div>
         <div class="hero-stat">
-          <span class="hero-stat-num">6</span>
-          <span class="hero-stat-label">Locations</span>
+          <span class="hero-stat-num">10</span>
+          <span class="hero-stat-label">Years Strong</span>
         </div>
       </div>
     </div>
@@ -232,19 +236,19 @@
   <!-- ═══════════════════════════ STATS TICKER ═══════════════════════════ -->
   <div class="stats-ticker">
     <div class="ticker-inner">
-      <span><i class="fas fa-fire"></i> 12,000+ Members</span>
-      <span><i class="fas fa-dumbbell"></i> 50+ Expert Coaches</span>
-      <span><i class="fas fa-trophy"></i> 200+ Championships</span>
+      <span><i class="fas fa-fire"></i> 1,500+ Members</span>
+      <span><i class="fas fa-dumbbell"></i> 10+ Certified Trainers</span>
+      <span><i class="fas fa-trophy"></i> Best Gym in Jaipur</span>
       <span><i class="fas fa-star"></i> 4.9/5 Rating</span>
-      <span><i class="fas fa-map-marker-alt"></i> 6 Premium Locations</span>
-      <span><i class="fas fa-bolt"></i> Open 24/7</span>
+      <span><i class="fas fa-map-marker-alt"></i> Patrakar Road, Jaipur</span>
+      <span><i class="fas fa-bolt"></i> Open 6AM – 10PM</span>
       <span><i class="fas fa-heart"></i> 98% Satisfaction Rate</span>
-      <span><i class="fas fa-fire"></i> 12,000+ Members</span>
-      <span><i class="fas fa-dumbbell"></i> 50+ Expert Coaches</span>
-      <span><i class="fas fa-trophy"></i> 200+ Championships</span>
+      <span><i class="fas fa-fire"></i> 1,500+ Members</span>
+      <span><i class="fas fa-dumbbell"></i> 10+ Certified Trainers</span>
+      <span><i class="fas fa-trophy"></i> Best Gym in Jaipur</span>
       <span><i class="fas fa-star"></i> 4.9/5 Rating</span>
-      <span><i class="fas fa-map-marker-alt"></i> 6 Premium Locations</span>
-      <span><i class="fas fa-bolt"></i> Open 24/7</span>
+      <span><i class="fas fa-map-marker-alt"></i> Patrakar Road, Jaipur</span>
+      <span><i class="fas fa-bolt"></i> Open 6AM – 10PM</span>
       <span><i class="fas fa-heart"></i> 98% Satisfaction Rate</span>
     </div>
   </div>
@@ -263,7 +267,7 @@
             <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=400&q=80" alt="Training" loading="lazy" />
           </div>
           <div class="about-exp-badge">
-            <span class="exp-num">8+</span>
+            <span class="exp-num">11+</span>
             <span class="exp-text">Years of<br/>Excellence</span>
           </div>
         </div>
@@ -272,30 +276,30 @@
         <div class="about-content-col" data-aos="fade-left">
           <div class="section-label"><i class="fas fa-bolt"></i> About Us</div>
           <h2 class="section-title">We Don't Just Build <span class="text-gradient">Bodies.</span><br/>We Build <span class="text-gradient">Champions.</span></h2>
-          <p class="about-desc">IRONFORGE Fitness Club was born from a single conviction: every person has untapped athletic potential waiting to be unlocked. Since 2018, we've been the premier destination for serious athletes and beginners alike — united by one burning desire: transformation.</p>
-          <p class="about-desc">Our world-class facilities, battle-tested programs, and elite coaching staff have produced national champions, bikini competitors, marathon finishers, and thousands of people who simply wanted to feel unstoppable.</p>
+          <p class="about-desc">Ultimate Fitness Club was built on a single belief: that every person in Jaipur deserves access to world-class fitness. Since 2015, we have been the go-to destination for beginners, fitness enthusiasts, and serious athletes alike — united by one goal: transformation.</p>
+          <p class="about-desc">From our state-of-the-art equipment and certified trainers to our steam bath, aerobics studio, and personalised BCA assessments — every facility here is designed to help you achieve the best version of yourself.</p>
 
           <!-- Mission pillars -->
           <div class="about-pillars">
             <div class="pillar">
               <div class="pillar-icon"><i class="fas fa-fire"></i></div>
               <div class="pillar-text">
-                <h4>Elite Training</h4>
-                <p>Science-backed programs that deliver real results, fast.</p>
+                <h4>Certified Training</h4>
+                <p>Expert-led programs with personalised workout cards and diet charts.</p>
               </div>
             </div>
             <div class="pillar">
               <div class="pillar-icon"><i class="fas fa-users"></i></div>
               <div class="pillar-text">
                 <h4>Community</h4>
-                <p>A tribe that pushes you when you want to quit.</p>
+                <p>A supportive family that motivates you every step of the way.</p>
               </div>
             </div>
             <div class="pillar">
               <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
               <div class="pillar-text">
                 <h4>Proven Results</h4>
-                <p>12,000+ success stories across 6 locations.</p>
+                <p>1,500+ success stories and counting from Jaipur's finest gym.</p>
               </div>
             </div>
           </div>
@@ -311,33 +315,49 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <span class="timeline-year">2018</span>
+              <span class="timeline-year">2015</span>
               <h4>Founded</h4>
-              <p>First club opened in downtown with 500 members.</p>
+              <p>Ultimate Fitness Club opened at Tirupati Vihar, Patrakar Road, Jaipur with our first 200 members.</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <span class="timeline-year">2020</span>
-              <h4>Expanded</h4>
-              <p>3 new locations, online coaching platform launched.</p>
+              <span class="timeline-year">2017</span>
+              <h4>Rapid Growth</h4>
+              <p>Crossed 500 members. Upgraded to world-class equipment and expanded the gym floor.</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <span class="timeline-year">2022</span>
+              <span class="timeline-year">2019</span>
+              <h4>Expanded Facilities</h4>
+              <p>Added dedicated aerobics studio, steam bath, shower facility and duct air conditioning.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2021</span>
               <h4>Award Won</h4>
-              <p>Best Fitness Brand Award. 8,000 members strong.</p>
+              <p>Recognised as one of Jaipur's Best Fitness Clubs. 800+ members and growing strong.</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-              <span class="timeline-year">2024</span>
-              <h4>12K+ Members</h4>
-              <p>6 locations, 50 trainers, national recognition.</p>
+              <span class="timeline-year">2023</span>
+              <h4>New Programs</h4>
+              <p>Launched HIIT, Zumba, BCA body testing and General Diet Chart services for all members.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2026</span>
+              <h4>Today — 1,500+ Strong</h4>
+              <p>11 years of excellence. 10+ certified trainers, 14 premium facilities and Jaipur's finest fitness community.</p>
             </div>
           </div>
         </div>
@@ -347,23 +367,23 @@
       <div class="stat-counters" id="statCounters">
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
           <i class="fas fa-users stat-icon"></i>
-          <div class="stat-num counter" data-target="12000">0</div>
+          <div class="stat-num counter" data-target="1500">0</div>
           <div class="stat-label">Happy Members</div>
         </div>
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
           <i class="fas fa-dumbbell stat-icon"></i>
-          <div class="stat-num counter" data-target="50">0</div>
-          <div class="stat-label">Elite Trainers</div>
+          <div class="stat-num counter" data-target="10">0</div>
+          <div class="stat-label">Certified Trainers</div>
         </div>
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
           <i class="fas fa-trophy stat-icon"></i>
-          <div class="stat-num counter" data-target="200">0</div>
-          <div class="stat-label">Championships</div>
+          <div class="stat-num counter" data-target="11">0</div>
+          <div class="stat-label">Years of Excellence</div>
         </div>
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
-          <i class="fas fa-map-marker-alt stat-icon"></i>
-          <div class="stat-num counter" data-target="6">0</div>
-          <div class="stat-label">Locations</div>
+          <i class="fas fa-list-alt stat-icon"></i>
+          <div class="stat-num counter" data-target="14">0</div>
+          <div class="stat-label">Facilities</div>
         </div>
         <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
           <i class="fas fa-star stat-icon"></i>
@@ -380,7 +400,7 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-label"><i class="fas fa-fire"></i> What We Offer</div>
         <h2 class="section-title">World-Class <span class="text-gradient">Programs</span></h2>
-        <p class="section-desc">From raw beginners to elite competitors — we have a program engineered for your exact goal.</p>
+        <p class="section-desc">From beginners to fitness enthusiasts — we have a program tailored for your exact goal.</p>
       </div>
 
       <div class="programs-grid">
@@ -389,10 +409,10 @@
           <div class="program-card-bg" style="--prog-color:#e63946;"></div>
           <div class="program-icon"><i class="fas fa-dumbbell"></i></div>
           <h3 class="program-name">Weight Training</h3>
-          <p class="program-desc">Build raw strength and muscle with our progressive overload-based strength training system.</p>
+          <p class="program-desc">Build strength and muscle with our world-class equipment and personalised workout cards designed by certified trainers.</p>
           <ul class="program-features">
             <li><i class="fas fa-check"></i> Strength & Hypertrophy</li>
-            <li><i class="fas fa-check"></i> Powerlifting Programs</li>
+            <li><i class="fas fa-check"></i> Custom Workout Card</li>
             <li><i class="fas fa-check"></i> Body Recomposition</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
@@ -401,13 +421,13 @@
 
         <div class="program-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
           <div class="program-card-bg" style="--prog-color:#f4a261;"></div>
-          <div class="program-icon"><i class="fas fa-fire"></i></div>
-          <h3 class="program-name">Fat Loss</h3>
-          <p class="program-desc">Accelerate fat burning with our HIIT-based metabolic conditioning and nutrition protocols.</p>
+          <div class="program-icon"><i class="fas fa-bolt"></i></div>
+          <h3 class="program-name">HIIT Training</h3>
+          <p class="program-desc">High-Intensity Interval Training sessions that torch fat, boost metabolism and deliver rapid results in record time.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> HIIT & Metabolic</li>
-            <li><i class="fas fa-check"></i> Nutrition Coaching</li>
-            <li><i class="fas fa-check"></i> Weekly Check-ins</li>
+            <li><i class="fas fa-check"></i> Fat Burning Circuits</li>
+            <li><i class="fas fa-check"></i> General Diet Chart</li>
+            <li><i class="fas fa-check"></i> Weekly Progress Check</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -417,11 +437,11 @@
           <div class="program-card-bg" style="--prog-color:#e63946;"></div>
           <div class="program-icon"><i class="fas fa-running"></i></div>
           <h3 class="program-name">Cardio Zone</h3>
-          <p class="program-desc">Boost endurance, heart health, and athletic capacity with our structured cardio programs.</p>
+          <p class="program-desc">Boost endurance, heart health and stamina with our dedicated cardio zone packed with modern treadmills and equipment.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> Zone 2 Training</li>
-            <li><i class="fas fa-check"></i> Marathon Prep</li>
-            <li><i class="fas fa-check"></i> Spin Classes</li>
+            <li><i class="fas fa-check"></i> Treadmill & Cycles</li>
+            <li><i class="fas fa-check"></i> Endurance Building</li>
+            <li><i class="fas fa-check"></i> Heart Health Focus</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -429,13 +449,13 @@
 
         <div class="program-card" data-aos="fade-up" data-aos-delay="240" data-tilt>
           <div class="program-card-bg" style="--prog-color:#f4a261;"></div>
-          <div class="program-icon"><i class="fas fa-crosshairs"></i></div>
-          <h3 class="program-name">CrossFit</h3>
-          <p class="program-desc">Functional fitness at its finest. Constantly varied workouts for total body dominance.</p>
+          <div class="program-icon"><i class="fas fa-music"></i></div>
+          <h3 class="program-name">Zumba</h3>
+          <p class="program-desc">Dance your way to fitness! Our energetic Zumba classes are a fun, full-body workout that burns calories and boosts mood.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> WOD Classes</li>
-            <li><i class="fas fa-check"></i> Olympic Lifting</li>
-            <li><i class="fas fa-check"></i> Team Events</li>
+            <li><i class="fas fa-check"></i> Dance Fitness</li>
+            <li><i class="fas fa-check"></i> All Fitness Levels</li>
+            <li><i class="fas fa-check"></i> Group Classes</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -443,13 +463,13 @@
 
         <div class="program-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
           <div class="program-card-bg" style="--prog-color:#e63946;"></div>
-          <div class="program-icon"><i class="fas fa-weight-hanging"></i></div>
-          <h3 class="program-name">Powerlifting</h3>
-          <p class="program-desc">Chase your 1RM in squat, bench, and deadlift with our world-class powerlifting coaches.</p>
+          <div class="program-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3 class="program-name">Aerobics</h3>
+          <p class="program-desc">Improve cardiovascular fitness and flexibility with our structured aerobics classes led by certified instructors.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> Comp Prep</li>
-            <li><i class="fas fa-check"></i> Technique Coaching</li>
-            <li><i class="fas fa-check"></i> Equipped Lifting</li>
+            <li><i class="fas fa-check"></i> Cardio Aerobics</li>
+            <li><i class="fas fa-check"></i> Flexibility Training</li>
+            <li><i class="fas fa-check"></i> Step & Tone Classes</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -458,12 +478,12 @@
         <div class="program-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
           <div class="program-card-bg" style="--prog-color:#f4a261;"></div>
           <div class="program-icon"><i class="fas fa-spa"></i></div>
-          <h3 class="program-name">Yoga & Mindfulness</h3>
-          <p class="program-desc">Restore, flex, breathe. Balance your hard training with guided yoga and recovery sessions.</p>
+          <h3 class="program-name">Yoga</h3>
+          <p class="program-desc">Restore balance, flexibility and mental clarity. Our guided yoga sessions complement your training and aid recovery.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> Power Yoga</li>
-            <li><i class="fas fa-check"></i> Mobility Work</li>
-            <li><i class="fas fa-check"></i> Guided Meditation</li>
+            <li><i class="fas fa-check"></i> Hatha & Power Yoga</li>
+            <li><i class="fas fa-check"></i> Mobility & Flexibility</li>
+            <li><i class="fas fa-check"></i> Stress Relief</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -473,11 +493,11 @@
           <div class="program-card-bg" style="--prog-color:#e63946;"></div>
           <div class="program-icon"><i class="fas fa-user-tie"></i></div>
           <h3 class="program-name">Personal Training</h3>
-          <p class="program-desc">1-on-1 coaching tailored entirely to your body, goals, and schedule. The fastest results guaranteed.</p>
+          <p class="program-desc">1-on-1 coaching with a certified trainer customised entirely to your body, goals and schedule for the fastest results.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> Custom Programs</li>
-            <li><i class="fas fa-check"></i> Nutrition Plans</li>
-            <li><i class="fas fa-check"></i> Progress Tracking</li>
+            <li><i class="fas fa-check"></i> Custom Workout Plan</li>
+            <li><i class="fas fa-check"></i> General Diet Chart</li>
+            <li><i class="fas fa-check"></i> BCA Body Assessment</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -485,13 +505,13 @@
 
         <div class="program-card" data-aos="fade-up" data-aos-delay="240" data-tilt>
           <div class="program-card-bg" style="--prog-color:#f4a261;"></div>
-          <div class="program-icon"><i class="fas fa-fist-raised"></i></div>
-          <h3 class="program-name">MMA / Combat</h3>
-          <p class="program-desc">Master striking, grappling, and fight conditioning with our professional MMA instructors.</p>
+          <div class="program-icon"><i class="fas fa-hot-tub"></i></div>
+          <h3 class="program-name">Steam Bath & Wellness</h3>
+          <p class="program-desc">Recover faster and rejuvenate with our premium steam bath and shower facilities — the perfect end to your workout.</p>
           <ul class="program-features">
-            <li><i class="fas fa-check"></i> Muay Thai</li>
-            <li><i class="fas fa-check"></i> BJJ / Wrestling</li>
-            <li><i class="fas fa-check"></i> Sparring Sessions</li>
+            <li><i class="fas fa-check"></i> Steam Bath</li>
+            <li><i class="fas fa-check"></i> Shower Bath Facility</li>
+            <li><i class="fas fa-check"></i> Post-Workout Recovery</li>
           </ul>
           <a href="#book-trial" class="program-cta">Get Started <i class="fas fa-arrow-right"></i></a>
           <div class="program-glow"></div>
@@ -507,14 +527,14 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-label"><i class="fas fa-users"></i> Expert Team</div>
         <h2 class="section-title">Meet Your <span class="text-gradient">Coaches</span></h2>
-        <p class="section-desc">Certified, passionate, and obsessed with your transformation. Our trainers are the best in the business.</p>
+        <p class="section-desc">Certified, passionate, and dedicated to your transformation. Our trainers bring real expertise to every session.</p>
       </div>
 
       <div class="trainers-grid">
 
         <div class="trainer-card" data-aos="fade-up" data-aos-delay="0">
           <div class="trainer-img-wrap">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Marcus Steel" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Rohit Verma" loading="lazy" />
             <div class="trainer-social-overlay">
               <a href="#" class="tsoc"><i class="fab fa-instagram"></i></a>
               <a href="#" class="tsoc"><i class="fab fa-youtube"></i></a>
@@ -522,18 +542,18 @@
             </div>
           </div>
           <div class="trainer-info">
-            <h3 class="trainer-name">Marcus Steel</h3>
-            <p class="trainer-role">Head Coach · Powerlifting</p>
+            <h3 class="trainer-name">Rohit Verma</h3>
+            <p class="trainer-role">Head Coach · Strength & Conditioning</p>
             <div class="trainer-tags">
-              <span>Powerlifting</span><span>Strength</span><span>Olympic Lifting</span>
+              <span>Weight Training</span><span>HIIT</span><span>BCA Testing</span>
             </div>
-            <div class="trainer-exp"><i class="fas fa-medal"></i> 12 Years Experience · NSCA Certified</div>
+            <div class="trainer-exp"><i class="fas fa-medal"></i> 10 Years Experience · Certified Trainer</div>
           </div>
         </div>
 
         <div class="trainer-card" data-aos="fade-up" data-aos-delay="100">
           <div class="trainer-img-wrap">
-            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80" alt="Aria Cruz" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80" alt="Neha Sharma" loading="lazy" />
             <div class="trainer-social-overlay">
               <a href="#" class="tsoc"><i class="fab fa-instagram"></i></a>
               <a href="#" class="tsoc"><i class="fab fa-youtube"></i></a>
@@ -541,18 +561,18 @@
             </div>
           </div>
           <div class="trainer-info">
-            <h3 class="trainer-name">Aria Cruz</h3>
-            <p class="trainer-role">Specialist · Fat Loss & Nutrition</p>
+            <h3 class="trainer-name">Neha Sharma</h3>
+            <p class="trainer-role">Specialist · Aerobics & Zumba</p>
             <div class="trainer-tags">
-              <span>Fat Loss</span><span>Nutrition</span><span>HIIT</span>
+              <span>Aerobics</span><span>Zumba</span><span>Diet Chart</span>
             </div>
-            <div class="trainer-exp"><i class="fas fa-medal"></i> 9 Years Experience · ISSA Certified</div>
+            <div class="trainer-exp"><i class="fas fa-medal"></i> 8 Years Experience · ISSA Certified</div>
           </div>
         </div>
 
         <div class="trainer-card" data-aos="fade-up" data-aos-delay="200">
           <div class="trainer-img-wrap">
-            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51cd?w=400&q=80" alt="Raj Khanna" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51cd?w=400&q=80" alt="Vikram Singh" loading="lazy" />
             <div class="trainer-social-overlay">
               <a href="#" class="tsoc"><i class="fab fa-instagram"></i></a>
               <a href="#" class="tsoc"><i class="fab fa-youtube"></i></a>
@@ -560,18 +580,18 @@
             </div>
           </div>
           <div class="trainer-info">
-            <h3 class="trainer-name">Raj Khanna</h3>
-            <p class="trainer-role">MMA & Combat Specialist</p>
+            <h3 class="trainer-name">Vikram Singh</h3>
+            <p class="trainer-role">Cardio & HIIT Specialist</p>
             <div class="trainer-tags">
-              <span>MMA</span><span>Muay Thai</span><span>BJJ</span>
+              <span>Cardio</span><span>HIIT</span><span>Fat Loss</span>
             </div>
-            <div class="trainer-exp"><i class="fas fa-medal"></i> 15 Years Experience · Pro Fighter</div>
+            <div class="trainer-exp"><i class="fas fa-medal"></i> 7 Years Experience · Certified Trainer</div>
           </div>
         </div>
 
         <div class="trainer-card" data-aos="fade-up" data-aos-delay="300">
           <div class="trainer-img-wrap">
-            <img src="https://images.unsplash.com/photo-1520720751442-4ea35d0b53c5?w=400&q=80" alt="Priya Sharma" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1520720751442-4ea35d0b53c5?w=400&q=80" alt="Priya Gupta" loading="lazy" />
             <div class="trainer-social-overlay">
               <a href="#" class="tsoc"><i class="fab fa-instagram"></i></a>
               <a href="#" class="tsoc"><i class="fab fa-youtube"></i></a>
@@ -579,12 +599,12 @@
             </div>
           </div>
           <div class="trainer-info">
-            <h3 class="trainer-name">Priya Sharma</h3>
-            <p class="trainer-role">Yoga & Mindfulness Coach</p>
+            <h3 class="trainer-name">Priya Gupta</h3>
+            <p class="trainer-role">Yoga Coach & Wellness Expert</p>
             <div class="trainer-tags">
-              <span>Yoga</span><span>Mobility</span><span>Recovery</span>
+              <span>Yoga</span><span>Flexibility</span><span>Recovery</span>
             </div>
-            <div class="trainer-exp"><i class="fas fa-medal"></i> 8 Years Experience · RYT-500</div>
+            <div class="trainer-exp"><i class="fas fa-medal"></i> 6 Years Experience · RYT-500</div>
           </div>
         </div>
 
@@ -796,7 +816,7 @@
         <div class="trial-content-col" data-aos="fade-right">
           <div class="section-label"><i class="fas fa-calendar-check"></i> Free Trial</div>
           <h2 class="section-title">Book Your <span class="text-gradient">Free Trial</span></h2>
-          <p>Experience IRONFORGE with zero commitment. One session is all it takes to know this is where your transformation begins.</p>
+          <p>Experience Ultimate Fitness Club with zero commitment. One session is all it takes to know this is where your transformation begins.</p>
           <ul class="trial-perks">
             <li><i class="fas fa-check"></i> Full gym access for 1 day</li>
             <li><i class="fas fa-check"></i> Meet your dedicated coach</li>
@@ -991,10 +1011,10 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="t-text">"IRONFORGE changed my life. In 6 months, I dropped 22kg, ran my first 5K, and genuinely feel unstoppable. My coach Marcus is a legend."</p>
+                <p class="t-text">"Ultimate Fitness Club changed my life. In 5 months, I dropped 18kg with a personalised workout card and diet chart. The trainers here truly care about your results."</p>
                 <div class="t-author">
                   <img src="https://i.pravatar.cc/60?img=11" alt="Sanjay" loading="lazy"/>
-                  <div><h5>Sanjay Menon</h5><span>Member since 2023</span></div>
+                  <div><h5>Sanjay Sharma</h5><span>Member since 2023</span></div>
                 </div>
               </div>
             </div>
@@ -1011,7 +1031,7 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="t-text">"I've tried 5 gyms. Nothing comes close to IRONFORGE. The energy, the community, the results — completely different league."</p>
+                <p class="t-text">"I've tried several gyms in Jaipur. Nothing comes close to Ultimate Fitness Club. The energy, the equipment, the community — it's a completely different league."</p>
                 <div class="t-author">
                   <img src="https://i.pravatar.cc/60?img=8" alt="Karan" loading="lazy"/>
                   <div><h5>Karan Mehta</h5><span>Member since 2021</span></div>
@@ -1021,10 +1041,10 @@
             <div class="swiper-slide">
               <div class="testimonial-card">
                 <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="t-text">"Aria's nutrition coaching combined with the gym program gave me a body I thought was impossible at 40. IRONFORGE makes champions."</p>
+                <p class="t-text">"The diet chart and BCA testing at Ultimate Fitness Club gave me results I thought were impossible at 40. The steam bath after training is such a great bonus!"</p>
                 <div class="t-author">
                   <img src="https://i.pravatar.cc/60?img=20" alt="Deepa" loading="lazy"/>
-                  <div><h5>Deepa Nair</h5><span>Member since 2023</span></div>
+                  <div><h5>Deepa Agarwal</h5><span>Member since 2023</span></div>
                 </div>
               </div>
             </div>
@@ -1042,8 +1062,8 @@
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <div class="section-label"><i class="fas fa-images"></i> Gallery</div>
-        <h2 class="section-title">Inside <span class="text-gradient">IRONFORGE</span></h2>
-        <p class="section-desc">A glimpse into our world-class facilities, energetic community and elite training environment.</p>
+        <h2 class="section-title">Inside <span class="text-gradient">Ultimate Fitness Club</span></h2>
+        <p class="section-desc">A glimpse into our world-class facilities, energetic community and premium training environment in Jaipur.</p>
       </div>
 
       <div class="gallery-grid" id="galleryGrid">
@@ -1183,67 +1203,75 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════ APP DOWNLOAD SECTION ═══════════════════════════ -->
-  <section class="section app-section" id="app">
+
+  <!-- ═══════════════════════════ INSTAGRAM FEED ═══════════════════════════ -->
+  <section class="section insta-section" id="instagram">
     <div class="container">
-      <div class="app-wrap" data-aos="fade-up">
-        <div class="app-content">
-          <div class="section-label"><i class="fas fa-mobile-alt"></i> Mobile App</div>
-          <h2 class="section-title">Train Anywhere with the <span class="text-gradient">IRONFORGE App</span></h2>
-          <p>Book classes, track workouts, chat with your coach, and monitor your progress — all in one powerful app.</p>
-          <ul class="app-features">
-            <li><i class="fas fa-check"></i> Live class booking</li>
-            <li><i class="fas fa-check"></i> AI workout recommendations</li>
-            <li><i class="fas fa-check"></i> Nutrition & macro tracking</li>
-            <li><i class="fas fa-check"></i> Coach messaging</li>
-          </ul>
-          <div class="app-download-btns">
-            <a href="#" class="app-btn">
-              <i class="fab fa-apple"></i>
-              <div><span class="app-store-sub">Download on the</span><span class="app-store-main">App Store</span></div>
-            </a>
-            <a href="#" class="app-btn">
-              <i class="fab fa-google-play"></i>
-              <div><span class="app-store-sub">Get it on</span><span class="app-store-main">Google Play</span></div>
-            </a>
+
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label"><i class="fab fa-instagram"></i> Instagram</div>
+        <h2 class="section-title">Follow Our <span class="text-gradient">Journey</span></h2>
+        <p class="section-desc">Daily training motivation, member transformations and gym life at Ultimate Fitness Club, Jaipur.</p>
+      </div>
+
+      <!-- Profile bar -->
+      <div class="insta-profile-bar" data-aos="fade-up">
+        <div class="insta-profile-left">
+          <div class="insta-avatar-wrap">
+            <div class="insta-avatar"><i class="fas fa-bolt"></i></div>
+            <div class="insta-avatar-ring"></div>
           </div>
-        </div>
-        <div class="app-mockup" data-aos="fade-left">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <div class="phone-app-ui">
-                <div class="phone-header">
-                  <span class="phone-logo"><i class="fas fa-bolt"></i> IRONFORGE</span>
-                  <i class="fas fa-bell phone-notif"></i>
-                </div>
-                <div class="phone-greeting">Good Morning, Champ 🔥</div>
-                <div class="phone-stats-row">
-                  <div class="phone-stat-mini"><span>2,140</span><small>kcal</small></div>
-                  <div class="phone-stat-mini"><span>8.2K</span><small>steps</small></div>
-                  <div class="phone-stat-mini"><span>72%</span><small>goal</small></div>
-                </div>
-                <div class="phone-class-card">
-                  <span class="phone-class-badge">TODAY</span>
-                  <h5>CrossFit WOD</h5>
-                  <p>6:00 PM · Marcus Steel</p>
-                  <button class="phone-book-btn">Book Now</button>
-                </div>
-                <div class="phone-progress-label">Weekly Progress</div>
-                <div class="phone-progress-bars">
-                  <div class="phone-bar" style="height:60%"></div>
-                  <div class="phone-bar" style="height:80%"></div>
-                  <div class="phone-bar" style="height:45%"></div>
-                  <div class="phone-bar" style="height:90%"></div>
-                  <div class="phone-bar" style="height:70%"></div>
-                  <div class="phone-bar active" style="height:55%"></div>
-                  <div class="phone-bar" style="height:30%"></div>
-                </div>
-              </div>
+          <div class="insta-profile-info">
+            <span class="insta-handle">@ultimate_fitness_club</span>
+            <div class="insta-meta">
+              <span><strong>245</strong> Posts</span>
+              <span><strong>1.5K</strong> Followers</span>
+              <span><strong>180</strong> Following</span>
             </div>
           </div>
-          <div class="phone-glow"></div>
         </div>
+        <a href="https://www.instagram.com/ultimate_fitness_club/" target="_blank" rel="noopener" class="btn btn-primary insta-follow-btn">
+          <i class="fab fa-instagram"></i> Follow Us
+        </a>
       </div>
+
+      <!-- Live Feed embed — powered by Behold.so (free) -->
+      <!-- TO ACTIVATE: Go to https://behold.so → connect @ultimate_fitness_club → copy your Widget ID → paste it as the data-behold-id below -->
+      <div class="insta-feed-wrap" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Behold widget loads here once Widget ID is set -->
+        <div id="behold-widget-placeholder">
+          <behold-widget feed-id="PASTE_YOUR_WIDGET_ID_HERE"></behold-widget>
+        </div>
+
+        <!-- Shown while the widget is not yet configured -->
+        <div class="insta-connect-notice" id="instaNotice">
+          <div class="insta-connect-inner">
+            <div class="insta-connect-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <h3>Connect Your Live Feed</h3>
+            <p>To show real posts from <strong>@ultimate_fitness_club</strong>, complete one free step:</p>
+            <ol class="insta-steps">
+              <li>Go to <strong>behold.so</strong> and create a free account</li>
+              <li>Connect your Instagram account <strong>@ultimate_fitness_club</strong></li>
+              <li>Copy your <strong>Widget ID</strong> from the dashboard</li>
+              <li>Replace <code>PASTE_YOUR_WIDGET_ID_HERE</code> in the HTML with your ID</li>
+            </ol>
+            <a href="https://behold.so" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px;">
+              <i class="fas fa-external-link-alt"></i> Set Up Free at Behold.so
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="insta-cta" data-aos="fade-up">
+        <a href="https://www.instagram.com/ultimate_fitness_club/" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-instagram"></i> View All Posts on Instagram
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -1252,7 +1280,7 @@
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <div class="section-label"><i class="fas fa-map-marker-alt"></i> Get In Touch</div>
-        <h2 class="section-title">Find <span class="text-gradient">IRONFORGE</span></h2>
+        <h2 class="section-title">Find <span class="text-gradient">Ultimate Fitness Club</span></h2>
       </div>
 
       <div class="contact-wrap">
@@ -1262,7 +1290,7 @@
               <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
                 <h4>Location</h4>
-                <p>42 Iron Street, Fitness District<br/>Mumbai, Maharashtra 400001</p>
+                <p>2, Tirupati Vihar (A), Patrakar Road<br/>Sarpanch Market, Jaipur, Rajasthan</p>
               </div>
             </div>
             <div class="contact-info-item">
@@ -1277,8 +1305,8 @@
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <h4>Email</h4>
-                <p>info@ironforge.fit</p>
-                <p>membership@ironforge.fit</p>
+                <p>info@ultimatefitnessclub.in</p>
+                <p>membership@ultimatefitnessclub.in</p>
               </div>
             </div>
             <div class="contact-info-item">
@@ -1325,9 +1353,9 @@
       <!-- Map -->
       <div class="map-wrap" data-aos="fade-up">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823057!2d72.74110095709773!3d19.08204858807485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6891871244053!2d75.76741631504!3d26.9199862831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5413b8e7c43%3A0xb3e1c54e1a8f8e1c!2sPatrakar%20Colony%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1715000000001!5m2!1sen!2sin"
           width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="IRONFORGE Location">
+          title="Ultimate Fitness Club Location">
         </iframe>
       </div>
     </div>
@@ -1341,9 +1369,9 @@
           <div class="footer-col brand-col">
             <div class="footer-logo">
               <i class="fas fa-bolt"></i>
-              <span>IRON<span class="logo-accent">FORGE</span></span>
+              <span>ULTIMATE<span class="logo-accent"> FITNESS</span></span>
             </div>
-            <p class="footer-brand-desc">Transforming lives through elite training, community, and relentless dedication to excellence since 2018.</p>
+            <p class="footer-brand-desc">Transforming lives through certified training, world-class facilities, and dedication to excellence since 2015. Jaipur's premier fitness destination.</p>
             <div class="footer-social">
               <a href="#" class="fsoc"><i class="fab fa-instagram"></i></a>
               <a href="#" class="fsoc"><i class="fab fa-facebook"></i></a>
@@ -1369,10 +1397,10 @@
             <h4 class="footer-col-title">Programs</h4>
             <ul class="footer-links">
               <li><a href="#programs">Weight Training</a></li>
-              <li><a href="#programs">CrossFit</a></li>
-              <li><a href="#programs">Personal Training</a></li>
-              <li><a href="#programs">Fat Loss</a></li>
-              <li><a href="#programs">MMA / Combat</a></li>
+              <li><a href="#programs">HIIT Training</a></li>
+              <li><a href="#programs">Cardio Zone</a></li>
+              <li><a href="#programs">Zumba</a></li>
+              <li><a href="#programs">Aerobics</a></li>
               <li><a href="#programs">Yoga</a></li>
             </ul>
           </div>
@@ -1396,7 +1424,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2026 IRONFORGE Fitness Club. All Rights Reserved.</p>
+        <p>&copy; 2026 Ultimate Fitness Club, Jaipur. All Rights Reserved.</p>
         <div class="footer-bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
@@ -1417,7 +1445,7 @@
 
       <!-- Login Form -->
       <div class="modal-form-wrap active" id="loginFormWrap">
-        <div class="modal-logo"><i class="fas fa-bolt"></i> IRONFORGE</div>
+        <div class="modal-logo"><i class="fas fa-bolt"></i> ULTIMATE FITNESS</div>
         <form class="premium-form" id="loginForm">
           <div class="form-group floating-label">
             <input type="email" id="loginEmail" required placeholder=" " />
@@ -1435,7 +1463,7 @@
 
       <!-- Signup Form -->
       <div class="modal-form-wrap" id="signupFormWrap">
-        <div class="modal-logo"><i class="fas fa-bolt"></i> IRONFORGE</div>
+        <div class="modal-logo"><i class="fas fa-bolt"></i> ULTIMATE FITNESS</div>
         <form class="premium-form" id="signupForm">
           <div class="form-group floating-label">
             <input type="text" id="signupName" required placeholder=" " />
@@ -1486,14 +1514,14 @@
     <div class="chatbot-header">
       <div class="chatbot-avatar"><i class="fas fa-bolt"></i></div>
       <div class="chatbot-info">
-        <h5>IRONFORGE AI</h5>
+        <h5>Ultimate Fitness AI</h5>
         <span class="chatbot-status"><span class="status-dot"></span> Online</span>
       </div>
       <button class="chatbot-minimize" id="chatbotClose"><i class="fas fa-minus"></i></button>
     </div>
     <div class="chatbot-messages" id="chatbotMessages">
       <div class="chat-msg bot">
-        <div class="chat-bubble">Hey! 👋 I'm your IRONFORGE AI coach. Ask me anything about fitness, nutrition, or our programs!</div>
+        <div class="chat-bubble">Hey! 👋 I'm your Ultimate Fitness Club AI coach. Ask me anything about fitness, nutrition, or our programs!</div>
       </div>
     </div>
     <div class="chatbot-quick-btns">
@@ -1509,7 +1537,7 @@
 
   <!-- ═══════════════════════════ FLOATING BUTTONS ═══════════════════════════ -->
   <!-- WhatsApp -->
-  <a href="https://wa.me/919876543210?text=Hi%20IRONFORGE!%20I%20want%20to%20book%20a%20free%20trial."
+  <a href="https://wa.me/919876543210?text=Hi%20Ultimate%20Fitness%20Club!%20I%20want%20to%20book%20a%20free%20trial."
      class="whatsapp-fab" id="whatsappFab" target="_blank" rel="noopener" title="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
@@ -1542,5 +1570,21 @@
 
   <!-- Main JS -->
   <script src="js/main.js"></script>
+
+  <script>
+    /* Hide the Behold setup notice once the widget renders real posts */
+    document.addEventListener('DOMContentLoaded', function () {
+      var widget = document.querySelector('behold-widget');
+      var notice = document.getElementById('instaNotice');
+      if (!widget || !notice) return;
+      var obs = new MutationObserver(function () {
+        if (widget.shadowRoot && widget.shadowRoot.querySelector('.behold-post')) {
+          notice.style.display = 'none';
+          obs.disconnect();
+        }
+      });
+      obs.observe(widget, { childList: true, subtree: true });
+    });
+  </script>
 </body>
 </html>
